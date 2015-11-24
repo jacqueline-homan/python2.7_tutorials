@@ -19,5 +19,6 @@ def main():
 # So you can replace the entire if-else block above with
 # a single line of code
 
+# Calling the function main():
 if __name__ == "__main__":
     main()
