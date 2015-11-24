@@ -31,3 +31,14 @@ def power(num, x=1):
 print power(2)
 print power(2, 3)
 print power(x=3, num=2)
+
+# Function w/ variable number of args:
+# Note: the splat, " * ", means a list of args of variable number
+def multi_add(*args):
+  result = 0;
+  for x in args:
+  	result = result + x
+  return result
+
+print multi_add(4, 5, 6, 4)
+  
