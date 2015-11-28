@@ -28,5 +28,11 @@ def main():
 	for i, r in enumerate(recipes):
 		print i, r
 
+	for x in range(2, 10):
+		if x % 2 == 0:
+			print "Even Steven!", x
+			continue
+		print "Odd man out!", x
+
 if __name__ == "__main__":
 	main()
