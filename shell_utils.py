@@ -21,6 +21,18 @@ def main():
 		# If you want to copy over perms, modification times, and other datta
 		shutil.copystat(src,dst)
 
+		# Rename the original file
+		os.rename("textfile.txt", "newfile.txt")
+
+		# Put things intp a ZIP archive
+		root_dir,tail = path.split(src)
+		shutil.make_archive("archive", "zip", root_dir)
+
+		# More control over ZIP files
+		with ZipFile("testzip.zip", "w") as newzip:
+			newzip.write("newfile.txt")
+			newzip.write("textfile.txt.bak")
+
 
 	
 

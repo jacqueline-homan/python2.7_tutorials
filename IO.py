@@ -15,7 +15,7 @@ def main():
 # Open the file back up for reading the contents
 	f = open("textfile.txt", "r")
 	if f.mode == 'r':
-		contents = f.read()
+		#contents = f.read()
 		flines = f.readlines()
 		for x in flines:
 			print x
