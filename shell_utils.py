@@ -18,7 +18,7 @@ def main():
 		dst = src + ".bak"
 		# Then use the shell to make a copy of the file
 		shutil.copy(src,dst)
-		# If you want to copy over perms, modification times, and other datta
+		# If you want to copy over perms, modification times, and other data
 		shutil.copystat(src,dst)
 
 		# Rename the original file

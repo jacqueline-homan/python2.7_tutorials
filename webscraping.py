@@ -2,7 +2,7 @@ import urllib2
 import json
 
 def main():
-	# Open a connection to a URL sing urllib2
+	# Open a connection to a URL using urllib2
 	webUrl = urllib2.urlopen("https://disqus.com")
 
 	# Get the result code and print it
